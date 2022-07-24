@@ -1,52 +1,63 @@
-let js = "amazing";
-// if (js === "amazing") alert("JavaScript is FUN!");
+// let js = "amazing";
+// // if (js === "amazing") alert("JavaScript is FUN!");
 
-let result = 40 + 8 + 23 - 10;
-console.log(result);
+// let result = 40 + 8 + 23 - 10;
+// console.log(result);
 
-console.log("Muhamed");
-console.log(21);
+// console.log("Muhamed");
+// console.log(21);
 
-let firstName = "Muhamed";
-console.log(firstName);
+// let firstName = "Muhamed";
+// console.log(firstName);
 
-let javascirptIsFun = true;
+// let javascirptIsFun = true;
 
-console.log(javascirptIsFun);
+// console.log(javascirptIsFun);
 
-console.log(typeof 41);
-console.log(typeof "Muhamed");
-console.log(typeof javascirptIsFun);
-console.log(typeof true);
+// console.log(typeof 41);
+// console.log(typeof "Muhamed");
+// console.log(typeof javascirptIsFun);
+// console.log(typeof true);
 
-javascirptIsFun = "Yes";
-console.log(typeof javascirptIsFun);
+// javascirptIsFun = "Yes";
+// console.log(typeof javascirptIsFun);
 
-// reassigning the value of a variable
-let age = 30;
-age = 31;
+// // reassigning the value of a variable
+// let age = 30;
+// age = 31;
 
-// variables thats not gonna change
-const birthYear = 2001;
-// birthYear = 2002; not working
+// // variables thats not gonna change
+// const birthYear = 2001;
+// // birthYear = 2002; not working
 
-// var is the old way of assigning variables
+// // var is the old way of assigning variables
+
+// const now = 2037;
+// const ageAyan = now - 1991;
+// const ageMuradifa = now - 2001;
+// console.log(ageAyan, ageMuradifa);
+
+// console.log(ageAyan / 2, ageAyan * 2, 2 ** 3);
+// // 2**3 means 2 to the power of 3
+
+// // const firstName = "Muhamed";
+// const lastName = "Ajanovic";
+
+// console.log(firstName + " " + lastName);
+
+// let x = 10 + 5;
+// x += 10; // x=x+10
+// x *= 4;
+// x++;
+// console.log(x);
 
 const now = 2037;
-const ageAyan = now - 1991;
-const ageMuradifa = now - 2001;
-console.log(ageAyan, ageMuradifa);
+const ageMuhamed = now - 1991;
+const ageMerhunisa = now - 2018;
 
-console.log(ageAyan / 2, ageAyan * 2, 2 ** 3);
-// 2**3 means 2 to the power of 3
+console.log(now - 1991 > now - 2018);
 
-// const firstName = "Muhamed";
-const lastName = "Ajanovic";
+let x, y;
+x = y = 25 - 10 - 5;
 
-console.log(firstName + " " + lastName);
-
-let x = 10 + 5;
-x += 10; // x=x+10
-x *= 4;
-x++;
-console.log(x);
+console.log(x, y);
