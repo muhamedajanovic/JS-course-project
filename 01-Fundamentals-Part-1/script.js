@@ -31,3 +31,22 @@ const birthYear = 2001;
 // birthYear = 2002; not working
 
 // var is the old way of assigning variables
+
+const now = 2037;
+const ageAyan = now - 1991;
+const ageMuradifa = now - 2001;
+console.log(ageAyan, ageMuradifa);
+
+console.log(ageAyan / 2, ageAyan * 2, 2 ** 3);
+// 2**3 means 2 to the power of 3
+
+// const firstName = "Muhamed";
+const lastName = "Ajanovic";
+
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5;
+x += 10; // x=x+10
+x *= 4;
+x++;
+console.log(x);
