@@ -62,22 +62,34 @@
 
 // console.log(x, y);
 
-const firstName = "Muhamed";
-const job = "dev";
-const birthYear = 2001;
-const year = 2022;
+// const firstName = "Muhamed";
+// const job = "dev";
+// const birthYear = 2001;
+// const year = 2022;
 
-const sentence = `I'm ${firstName}. And I am ${job}. I am ${
-  year - birthYear
-} years old`;
+// const sentence = `I'm ${firstName}. And I am ${job}. I am ${
+//   year - birthYear
+// } years old`;
 
-console.log(sentence);
+// console.log(sentence);
 
-// multiline string
+// // multiline string
 
-console.log(`string
-ide gas
+// console.log(`string
+// ide gas
 
-sad
-sda
-`);
+// sad
+// sda
+// `);
+
+//if else statement
+
+const age = 12;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log(`Person is old enough`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Wait another ${yearsLeft} to take driving test`);
+}
