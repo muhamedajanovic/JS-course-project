@@ -51,13 +51,33 @@
 // x++;
 // console.log(x);
 
-const now = 2037;
-const ageMuhamed = now - 1991;
-const ageMerhunisa = now - 2018;
+// const now = 2037;
+// const ageMuhamed = now - 1991;
+// const ageMerhunisa = now - 2018;
 
-console.log(now - 1991 > now - 2018);
+// console.log(now - 1991 > now - 2018);
 
-let x, y;
-x = y = 25 - 10 - 5;
+// let x, y;
+// x = y = 25 - 10 - 5;
 
-console.log(x, y);
+// console.log(x, y);
+
+const firstName = "Muhamed";
+const job = "dev";
+const birthYear = 2001;
+const year = 2022;
+
+const sentence = `I'm ${firstName}. And I am ${job}. I am ${
+  year - birthYear
+} years old`;
+
+console.log(sentence);
+
+// multiline string
+
+console.log(`string
+ide gas
+
+sad
+sda
+`);
