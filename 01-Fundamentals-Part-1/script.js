@@ -84,12 +84,24 @@
 
 //if else statement
 
-const age = 12;
-const isOldEnough = age >= 18;
+// const age = 12;
+// const isOldEnough = age >= 18;
 
-if (isOldEnough) {
-  console.log(`Person is old enough`);
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Wait another ${yearsLeft} to take driving test`);
-}
+// if (isOldEnough) {
+// console.log(`Person is old enough`);
+// } else {
+// const yearsLeft = 18 - age;
+// console.log(`Wait another ${yearsLeft} to take driving test`);
+// }
+
+let inputYear = "1991";
+
+console.log(Number(inputYear));
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+inputYear = Number(inputYear);
+console.log(inputYear);
+
+inputYear = String(inputYear);
+console.log(inputYear);
