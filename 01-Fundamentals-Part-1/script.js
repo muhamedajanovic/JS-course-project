@@ -139,18 +139,33 @@
 // console.log(favourite);
 // console.log(Number(favourite));
 
-const hasDriversLicence = true;
-const hasGoodVision = true;
-const isTired = true;
+// const hasDriversLicence = true;
+// const hasGoodVision = true;
+// const isTired = true;
 
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-console.log(!hasDriversLicence || hasGoodVision);
+// console.log(hasDriversLicence && hasGoodVision);
+// console.log(hasDriversLicence || hasGoodVision);
+// console.log(!hasDriversLicence || hasGoodVision);
 
-const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
+// const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
 
-if (shouldDrive) {
-  console.log("Sarah should drive");
-} else {
-  console.log("She should not drive");
+// if (shouldDrive) {
+//   console.log("Sarah should drive");
+// } else {
+//   console.log("She should not drive");
+// }
+
+const day = "wednesday";
+
+switch (day) {
+  case "monday":
+    console.log("plan course structure");
+    console.log("coding meetup");
+    break;
+  case "tuesday":
+    console.log("prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
 }
