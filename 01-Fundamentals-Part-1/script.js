@@ -108,23 +108,33 @@
 
 // 5 falsy values: 0, "", undefined, null, NaN
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(""));
-console.log(Boolean(null));
-console.log(Boolean(NaN));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
 
-const money = 0;
+// const money = 0;
 
-if (money) {
-  console.log("Don't spend it all");
-} else {
-  console.log("You should get a job!");
-}
+// if (money) {
+//   console.log("Don't spend it all");
+// } else {
+//   console.log("You should get a job!");
+// }
 
-let height;
-if (height) {
-  console.log("defined");
-} else {
-  console.log("undefined");
-}
+// let height;
+// if (height) {
+//   console.log("defined");
+// } else {
+//   console.log("undefined");
+// }
+
+const age = 18;
+if (age === 18) console.log(`You just become an adult`);
+
+console.log("18" == 18);
+console.log("18" === 18);
+
+const favourite = prompt("What's your favourite nuber");
+console.log(favourite);
+console.log(Number(favourite));
