@@ -129,12 +129,28 @@
 //   console.log("undefined");
 // }
 
-const age = 18;
-if (age === 18) console.log(`You just become an adult`);
+// const age = 18;
+// if (age === 18) console.log(`You just become an adult`);
 
-console.log("18" == 18);
-console.log("18" === 18);
+// console.log("18" == 18);
+// console.log("18" === 18);
 
-const favourite = prompt("What's your favourite nuber");
-console.log(favourite);
-console.log(Number(favourite));
+// const favourite = prompt("What's your favourite nuber");
+// console.log(favourite);
+// console.log(Number(favourite));
+
+const hasDriversLicence = true;
+const hasGoodVision = true;
+const isTired = true;
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence || hasGoodVision);
+
+const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
+
+if (shouldDrive) {
+  console.log("Sarah should drive");
+} else {
+  console.log("She should not drive");
+}
