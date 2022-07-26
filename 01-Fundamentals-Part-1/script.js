@@ -94,14 +94,37 @@
 // console.log(`Wait another ${yearsLeft} to take driving test`);
 // }
 
-let inputYear = "1991";
+// let inputYear = "1991";
 
-console.log(Number(inputYear));
-console.log(inputYear + 18);
-console.log(Number(inputYear) + 18);
+// console.log(Number(inputYear));
+// console.log(inputYear + 18);
+// console.log(Number(inputYear) + 18);
 
-inputYear = Number(inputYear);
-console.log(inputYear);
+// inputYear = Number(inputYear);
+// console.log(inputYear);
 
-inputYear = String(inputYear);
-console.log(inputYear);
+// inputYear = String(inputYear);
+// console.log(inputYear);
+
+// 5 falsy values: 0, "", undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+const money = 0;
+
+if (money) {
+  console.log("Don't spend it all");
+} else {
+  console.log("You should get a job!");
+}
+
+let height;
+if (height) {
+  console.log("defined");
+} else {
+  console.log("undefined");
+}
