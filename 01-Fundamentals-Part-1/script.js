@@ -155,17 +155,27 @@
 //   console.log("She should not drive");
 // }
 
-const day = "wednesday";
+// const day = "wednesday";
 
-switch (day) {
-  case "monday":
-    console.log("plan course structure");
-    console.log("coding meetup");
-    break;
-  case "tuesday":
-    console.log("prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-}
+// switch (day) {
+//   case "monday":
+//     console.log("plan course structure");
+//     console.log("coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+// }
+
+const age = 23;
+age >= 18
+  ? console.log("I like to dring alcohol")
+  : console.log("I like to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+console.log(`Drink: ${age >= 18 ? "wine" : "water"}`);
