@@ -18,17 +18,29 @@
 
 // fruitProcessor(5, 0);
 
-function calcAge1(birthYear) {
+// function calcAge1(birthYear) {
+//   const age = 2037 - birthYear;
+//   return age;
+// }
+
+// const age1 = calcAge1(1991);
+// console.log(age1);
+
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+
+// const age2 = calcAge2(1991);
+// console.log(age1, age2);
+
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearUntilRetirement = (birthYear) => {
   const age = 2037 - birthYear;
-  return age;
-}
-
-const age1 = calcAge1(1991);
-console.log(age1);
-
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
 };
 
-const age2 = calcAge2(1991);
-console.log(age1, age2);
+console.log(yearUntilRetirement(1991));
