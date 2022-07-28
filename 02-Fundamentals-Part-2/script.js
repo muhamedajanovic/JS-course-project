@@ -33,14 +33,28 @@
 // const age2 = calcAge2(1991);
 // console.log(age1, age2);
 
-const calcAge3 = (birthYear) => 2037 - birthYear;
-const age3 = calcAge3(1991);
-console.log(age3);
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
 
-const yearUntilRetirement = (birthYear) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return retirement;
-};
+// const yearUntilRetirement = (birthYear) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return retirement;
+// };
 
-console.log(yearUntilRetirement(1991));
+// console.log(yearUntilRetirement(1991));
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} apple pieces, and ${orangePieces} orange pieces.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
