@@ -59,14 +59,27 @@
 
 // console.log(fruitProcessor(2, 3));
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const yearUntilRetirement = (birthYear, firstName) => {
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`;
-};
+// const yearUntilRetirement = (birthYear, firstName) => {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement} years`;
+// };
 
-console.log(yearUntilRetirement(2001, "Muhamed"));
+// console.log(yearUntilRetirement(2001, "Muhamed"));
+
+const friends = ["Muhamed", "Amar", "Murat"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 1994, 2023);
+
+console.log(friends[0]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Šaban";
+console.log(friends);
