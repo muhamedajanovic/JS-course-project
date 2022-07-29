@@ -71,15 +71,37 @@
 
 // console.log(yearUntilRetirement(2001, "Muhamed"));
 
+// const friends = ["Muhamed", "Amar", "Murat"];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 1994, 2023);
+
+// console.log(friends[0]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = "Šaban";
+// console.log(friends);
+
 const friends = ["Muhamed", "Amar", "Murat"];
+
+// add elements
+
+friends.push("Hasan");
+
+friends.unshift("Ekrem");
+
+//remove elements
+
+friends.pop();
+
+friends.shift();
 console.log(friends);
 
-const years = new Array(1991, 1984, 1994, 2023);
+console.log(friends.indexOf("Amar"));
+console.log(friends.includes("Amar"));
 
-console.log(friends[0]);
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-friends[2] = "Šaban";
-console.log(friends);
+if (friends.includes("Amar")) {
+  console.log("You have a friend called Amar");
+}
