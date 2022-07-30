@@ -113,3 +113,23 @@ const muhamed = {
   job: "programer",
   friends: ["Hasan", "Amar", "Murat"],
 };
+
+console.log(muhamed.lastName);
+console.log(muhamed["lastName"]);
+
+const interestedIn = prompt("What do you want to know about Muhamed");
+
+if (muhamed[interestedIn]) {
+  console.log(muhamed[interestedIn]);
+} else {
+  console.log("Wrong request");
+}
+
+muhamed.location = "Essen";
+muhamed["twitter"] = "@ayan_ci";
+
+console.log(muhamed);
+
+console.log(
+  `${muhamed.firstName} has ${muhamed.friends.length} friends, and his best friend is called ${muhamed.friends[0]} `
+);
