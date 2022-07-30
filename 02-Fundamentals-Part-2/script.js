@@ -84,24 +84,32 @@
 // friends[2] = "Šaban";
 // console.log(friends);
 
-const friends = ["Muhamed", "Amar", "Murat"];
+// const friends = ["Muhamed", "Amar", "Murat"];
 
-// add elements
+// // add elements
 
-friends.push("Hasan");
+// friends.push("Hasan");
 
-friends.unshift("Ekrem");
+// friends.unshift("Ekrem");
 
-//remove elements
+// //remove elements
 
-friends.pop();
+// friends.pop();
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf("Amar"));
-console.log(friends.includes("Amar"));
+// console.log(friends.indexOf("Amar"));
+// console.log(friends.includes("Amar"));
 
-if (friends.includes("Amar")) {
-  console.log("You have a friend called Amar");
-}
+// if (friends.includes("Amar")) {
+//   console.log("You have a friend called Amar");
+// }
+
+const muhamed = {
+  firstName: "Muhamed",
+  lastName: "Ajanovic",
+  age: 2022 - 2021,
+  job: "programer",
+  friends: ["Hasan", "Amar", "Murat"],
+};
