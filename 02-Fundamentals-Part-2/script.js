@@ -134,27 +134,31 @@
 //   `${muhamed.firstName} has ${muhamed.friends.length} friends, and his best friend is called ${muhamed.friends[0]} `
 // );
 
-const muhamed = {
-  firstName: "Muhamed",
-  lastName: "Ajanovic",
-  birthYear: 2001,
-  job: "programer",
-  friends: ["Hasan", "Amar", "Murat"],
-  hasDriversLicence: true,
+// const muhamed = {
+//   firstName: "Muhamed",
+//   lastName: "Ajanovic",
+//   birthYear: 2001,
+//   job: "programer",
+//   friends: ["Hasan", "Amar", "Murat"],
+//   hasDriversLicence: true,
 
-  calcAge: function () {
-    this.age = 2022 - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
 
-  textMessage: function () {
-    console.log(
-      `${this.firstName} is ${this.calcAge()}-year old ${this.job} and he has ${
-        this.hasDriversLicence ? "a" : "no"
-      } driving licence`
-    );
-  },
-};
+//   textMessage: function () {
+//     console.log(
+//       `${this.firstName} is ${this.calcAge()}-year old ${this.job} and he has ${
+//         this.hasDriversLicence ? "a" : "no"
+//       } driving licence`
+//     );
+//   },
+// };
 
-console.log(muhamed.calcAge());
-muhamed.textMessage();
+// console.log(muhamed.calcAge());
+// muhamed.textMessage();
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`ide ${rep}. ponavljanje`);
+}
