@@ -106,30 +106,55 @@
 //   console.log("You have a friend called Amar");
 // }
 
+// const muhamed = {
+//   firstName: "Muhamed",
+//   lastName: "Ajanovic",
+//   age: 2022 - 2021,
+//   job: "programer",
+//   friends: ["Hasan", "Amar", "Murat"],
+// };
+
+// console.log(muhamed.lastName);
+// console.log(muhamed["lastName"]);
+
+// const interestedIn = prompt("What do you want to know about Muhamed");
+
+// if (muhamed[interestedIn]) {
+//   console.log(muhamed[interestedIn]);
+// } else {
+//   console.log("Wrong request");
+// }
+
+// muhamed.location = "Essen";
+// muhamed["twitter"] = "@ayan_ci";
+
+// console.log(muhamed);
+
+// console.log(
+//   `${muhamed.firstName} has ${muhamed.friends.length} friends, and his best friend is called ${muhamed.friends[0]} `
+// );
+
 const muhamed = {
   firstName: "Muhamed",
   lastName: "Ajanovic",
-  age: 2022 - 2021,
+  birthYear: 2001,
   job: "programer",
   friends: ["Hasan", "Amar", "Murat"],
+  hasDriversLicence: true,
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+
+  textMessage: function () {
+    console.log(
+      `${this.firstName} is ${this.calcAge()}-year old ${this.job} and he has ${
+        this.hasDriversLicence ? "a" : "no"
+      } driving licence`
+    );
+  },
 };
 
-console.log(muhamed.lastName);
-console.log(muhamed["lastName"]);
-
-const interestedIn = prompt("What do you want to know about Muhamed");
-
-if (muhamed[interestedIn]) {
-  console.log(muhamed[interestedIn]);
-} else {
-  console.log("Wrong request");
-}
-
-muhamed.location = "Essen";
-muhamed["twitter"] = "@ayan_ci";
-
-console.log(muhamed);
-
-console.log(
-  `${muhamed.firstName} has ${muhamed.friends.length} friends, and his best friend is called ${muhamed.friends[0]} `
-);
+console.log(muhamed.calcAge());
+muhamed.textMessage();
