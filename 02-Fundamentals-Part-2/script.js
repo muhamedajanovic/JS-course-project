@@ -159,6 +159,42 @@
 // console.log(muhamed.calcAge());
 // muhamed.textMessage();
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`ide ${rep}. ponavljanje`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`ide ${rep}. ponavljanje`);
+// }
+
+const muhamedArray = [
+  "Muhamed",
+  "Ajanovic",
+  2022 - 2001,
+  "programmer",
+  ["Hasan", "Murat", "Osman"],
+];
+
+const types = [];
+
+for (let i = 0; i < muhamedArray.length; i++) {
+  console.log(muhamedArray[i], typeof muhamedArray[i]);
+  // types[i] = typeof muhamedArray[i];
+  types.push(typeof muhamedArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 1997, 2001, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2022 - years[i]);
+}
+
+console.log(ages);
+
+for (let i = 0; i < muhamedArray.length; i++) {
+  if (typeof muhamedArray[i] !== "string") continue;
+  console.log(muhamedArray[i], typeof muhamedArray[i]);
+}
+for (let i = 0; i < muhamedArray.length; i++) {
+  if (typeof muhamedArray[i] === "number") break;
+  console.log(muhamedArray[i], typeof muhamedArray[i]);
 }
