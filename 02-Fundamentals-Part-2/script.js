@@ -163,6 +163,42 @@
 //   console.log(`ide ${rep}. ponavljanje`);
 // }
 
+// const muhamedArray = [
+//   "Muhamed",
+//   "Ajanovic",
+//   2022 - 2001,
+//   "programmer",
+//   ["Hasan", "Murat", "Osman"],
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < muhamedArray.length; i++) {
+//   console.log(muhamedArray[i], typeof muhamedArray[i]);
+//   // types[i] = typeof muhamedArray[i];
+//   types.push(typeof muhamedArray[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 1997, 2001, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2022 - years[i]);
+// }
+
+// console.log(ages);
+
+// for (let i = 0; i < muhamedArray.length; i++) {
+//   if (typeof muhamedArray[i] !== "string") continue;
+//   console.log(muhamedArray[i], typeof muhamedArray[i]);
+// }
+// for (let i = 0; i < muhamedArray.length; i++) {
+//   if (typeof muhamedArray[i] === "number") break;
+//   console.log(muhamedArray[i], typeof muhamedArray[i]);
+// }
+
 const muhamedArray = [
   "Muhamed",
   "Ajanovic",
@@ -171,30 +207,13 @@ const muhamedArray = [
   ["Hasan", "Murat", "Osman"],
 ];
 
-const types = [];
-
-for (let i = 0; i < muhamedArray.length; i++) {
-  console.log(muhamedArray[i], typeof muhamedArray[i]);
-  // types[i] = typeof muhamedArray[i];
-  types.push(typeof muhamedArray[i]);
+for (let i = muhamedArray.length - 1; i >= 0; i--) {
+  console.log(muhamedArray[i]);
 }
 
-console.log(types);
-
-const years = [1991, 1997, 2001, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2022 - years[i]);
-}
-
-console.log(ages);
-
-for (let i = 0; i < muhamedArray.length; i++) {
-  if (typeof muhamedArray[i] !== "string") continue;
-  console.log(muhamedArray[i], typeof muhamedArray[i]);
-}
-for (let i = 0; i < muhamedArray.length; i++) {
-  if (typeof muhamedArray[i] === "number") break;
-  console.log(muhamedArray[i], typeof muhamedArray[i]);
+for (let excercise = 1; excercise < 4; excercise++) {
+  console.log(`Starting excercise ${excercise}`);
+  for (let rep = 1; rep < 11; rep++) {
+    console.log(`Repetition ${rep}`);
+  }
 }
