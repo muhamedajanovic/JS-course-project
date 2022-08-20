@@ -199,21 +199,35 @@
 //   console.log(muhamedArray[i], typeof muhamedArray[i]);
 // }
 
-const muhamedArray = [
-  "Muhamed",
-  "Ajanovic",
-  2022 - 2001,
-  "programmer",
-  ["Hasan", "Murat", "Osman"],
-];
+// const muhamedArray = [
+//   "Muhamed",
+//   "Ajanovic",
+//   2022 - 2001,
+//   "programmer",
+//   ["Hasan", "Murat", "Osman"],
+// ];
 
-for (let i = muhamedArray.length - 1; i >= 0; i--) {
-  console.log(muhamedArray[i]);
+// for (let i = muhamedArray.length - 1; i >= 0; i--) {
+//   console.log(muhamedArray[i]);
+// }
+
+// for (let excercise = 1; excercise < 4; excercise++) {
+//   console.log(`Starting excercise ${excercise}`);
+//   for (let rep = 1; rep < 11; rep++) {
+//     console.log(`Repetition ${rep}`);
+//   }
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`rep: ${rep}`);
+  rep++;
 }
 
-for (let excercise = 1; excercise < 4; excercise++) {
-  console.log(`Starting excercise ${excercise}`);
-  for (let rep = 1; rep < 11; rep++) {
-    console.log(`Repetition ${rep}`);
-  }
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Rolling is about to end...");
 }
