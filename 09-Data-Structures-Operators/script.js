@@ -26,6 +26,11 @@ const restaurant = {
     );
   },
 
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+
   openingHours: {
     thu: {
       open: 12,
@@ -41,34 +46,62 @@ const restaurant = {
     },
   },
 };
+//spread
+const arr = [1, 2, ...[3, 4]];
+//rest
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(others);
 
-const arr = [7, 8, 9];
-const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-console.log(badNewArr);
-
-const goodNewArr = [1, 2, ...arr];
-console.log(goodNewArr);
-
-console.log(...goodNewArr);
-
-const newMenu = [...restaurant.mainMenu, "Gnocci"];
-console.log(newMenu);
-
-const mainMenuCopy = [...restaurant.mainMenu];
-
-const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
-
-console.log(menu);
-
-const ingredients = [
-  prompt("Let's make pasta! Igredient 1?"),
-  prompt("Igredient 2?"),
-  prompt("Igredient 3?"),
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
 ];
 
-console.log(ingredients);
+console.log(pizza, risotto, otherFood);
 
-restaurant.orderPasta(...ingredients);
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+const add = function (...numbers) {
+  console.log(numbers);
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  console.log(sum);
+};
+
+const x = [2, 4, 4, 5, 6, 7];
+add(...x);
+
+restaurant.orderPizza("mushrooms", "onion", "olives");
+// const arr = [7, 8, 9];
+// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+
+// const goodNewArr = [1, 2, ...arr];
+// console.log(goodNewArr);
+
+// console.log(...goodNewArr);
+
+// const newMenu = [...restaurant.mainMenu, "Gnocci"];
+// console.log(newMenu);
+
+// const mainMenuCopy = [...restaurant.mainMenu];
+
+// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+
+// console.log(menu);
+
+// const ingredients = [
+//   prompt("Let's make pasta! Igredient 1?"),
+//   prompt("Igredient 2?"),
+//   prompt("Igredient 3?"),
+// ];
+
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
 
 // restaurant.orderDelivery({
 //   time: "22:30",
