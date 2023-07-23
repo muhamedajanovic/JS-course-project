@@ -22,6 +22,10 @@ const restaurant = {
     );
   },
 
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
+
   openingHours: {
     thu: {
       open: 12,
@@ -38,35 +42,57 @@ const restaurant = {
   },
 };
 
-restaurant.orderDelivery({
-  time: "23:30",
-  address: "Via del Sole, 21",
-  mainIndex: 2,
-});
+const arr = [7, 8, 9];
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+const newArr = [1, 2, ...arr];
+console.log(newArr);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
+const newMenu = [...restaurant.mainMenu, "Gnocci"];
+console.log(newMenu);
 
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 
-let a = 111;
-let b = 222;
-const obj = { a: 23, b: 7, c: 14 };
+const str = "Muhamed";
+const letters = [...str, " ", "A."];
+console.log(letters);
 
-({ a, b } = obj);
-console.log(a, b);
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt("Ingredient 2?"),
+//   prompt("Ingredient 3?"),
+// ];
 
-const {
-  fri: { open, close },
-} = openingHours;
-console.log(open, close);
+// restaurant.orderPasta(...ingredients);
+
+// restaurant.orderDelivery({
+//   time: "23:30",
+//   address: "Via del Sole, 21",
+//   mainIndex: 2,
+// });
+
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
+
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
+
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// let a = 111;
+// let b = 222;
+// const obj = { a: 23, b: 7, c: 14 };
+
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// const {
+//   fri: { open, close },
+// } = openingHours;
+// console.log(open, close);
 
 // const arr = [2, 3, 4];
 // const a = arr[0];
